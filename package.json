@@ -1,10 +1,10 @@
 {
   "name": "print-screener",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "license": "MIT",
-  "displayName": "Web Extension Boilerplate",
+  "displayName": "Print screener",
   "description": "A simple chrome extension template with Vite, React, TypeScript.",
   "scripts": {
     "watch": "nodemon",
