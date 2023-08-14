@@ -1,8 +1,9 @@
 import fs from 'fs';
 import { resolve } from 'path';
+import { PluginOption } from 'vite';
+
 import { colorLog } from '../log';
 import manifest from '../../src/manifest';
-import { PluginOption } from 'vite';
 
 const outDir = resolve(__dirname, '..', '..', 'public');
 
