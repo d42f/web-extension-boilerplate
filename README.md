@@ -1,1 +1,1 @@
-# PRINT_SCREENER is a web extension to make screencasts
+# PRINT-SCREENER is a web extension to make screencasts
