@@ -1,11 +1,8 @@
 .wrapper {
-  font-size: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: red;
-}
-
-.logo {
-  width: 100%;
+  padding: 12rem;
+  position: relative;
+  font-size: 1rem;
 }

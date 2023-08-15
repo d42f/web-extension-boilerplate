@@ -9,8 +9,9 @@ import { buildContentScript } from './utils/plugins/build-content-script';
 const outDir = resolve(__dirname, outputFolderName);
 const publicDir = resolve(__dirname, 'public');
 const root = resolve(__dirname, 'src');
-const pagesDir = resolve(root, 'pages');
 const assetsDir = resolve(root, 'assets');
+const componentsDir = resolve(root, 'components');
+const pagesDir = resolve(root, 'pages');
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -18,6 +19,7 @@ export default defineConfig({
     alias: {
       '@src': root,
       '@assets': assetsDir,
+      '@components': componentsDir,
       '@pages': pagesDir,
     },
   },

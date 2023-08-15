@@ -1,16 +1,17 @@
 import { createRoot } from 'react-dom/client';
 
-import './style.css';
+import styles from './index.module.css';
+import { Content } from './Content';
 
-const rootContainer = document.createElement('div');
-rootContainer.id = '__root';
-document.body.appendChild(rootContainer);
+const init = () => {
+  const rootContainer = document?.createElement('div');
+  if (rootContainer) {
+    rootContainer.id = '__root';
+    rootContainer.classList.add(styles.root);
+    document.body.appendChild(rootContainer);
+    const root = createRoot(rootContainer);
+    root.render(<Content />);
+  }
+};
 
-const root = createRoot(rootContainer);
-root.render(<div className="hello">content script loaded</div>);
-
-try {
-  console.log('content script loaded');
-} catch (error) {
-  console.error(error);
-}
+init();
