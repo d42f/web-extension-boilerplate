@@ -22,12 +22,12 @@ const manifest: Manifest.WebExtensionManifest = {
     '128': 'icon-128.png',
   },
   permissions: ['activeTab'],
-  content_scripts: [
-    {
-      matches: ['http://*/*', 'https://*/*', '<all_urls>'],
-      js: ['src/pages/content/index.js'],
-    },
-  ],
+  // content_scripts: [
+  //   {
+  //     matches: ['http://*/*', 'https://*/*', '<all_urls>'],
+  //     js: ['src/pages/content/index.js'],
+  //   },
+  // ],
   web_accessible_resources: [
     {
       resources: ['icon-128.png', 'icon-34.png'],
