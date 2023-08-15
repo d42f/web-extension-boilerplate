@@ -1,1 +1,1 @@
-# PRINT-SCREENER is a web extension to make screencasts
+# Chrome Extension Boilerplate with React + Vite + TypeScript
