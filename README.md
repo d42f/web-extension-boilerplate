@@ -1,1 +1,1 @@
-# Chrome Extension Boilerplate with React + Vite + TypeScript
+## Chrome Extension Boilerplate with React + Vite + TypeScript
