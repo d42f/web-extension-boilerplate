@@ -1,5 +1,5 @@
-import './Options.css';
+import styles from './Options.module.css';
 
 export const Options = (): JSX.Element => {
-  return <div className="wrapper">Options</div>;
+  return <div className={styles.wrapper}>Options component</div>;
 };

@@ -1,0 +1,10 @@
+@import '@styles/globals.css';
+
+body {
+  width: 320px;
+}
+
+.root {
+  display: flex;
+  flex-flow: column;
+}

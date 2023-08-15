@@ -1,15 +1,15 @@
 import { createRoot } from 'react-dom/client';
 
 import { Popup } from './Popup';
-import './index.css';
+import styles from './index.module.css';
 
 const init = () => {
   const rootContainer = document.querySelector('#__root');
-  if (!rootContainer) {
-    throw new Error('Can not find Popup root element');
+  if (rootContainer) {
+    rootContainer.classList.add(styles.root);
+    const root = createRoot(rootContainer);
+    root.render(<Popup />);
   }
-  const root = createRoot(rootContainer);
-  root.render(<Popup />);
 };
 
 init();

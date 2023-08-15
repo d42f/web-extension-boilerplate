@@ -1,0 +1,6 @@
+@import '../../styles/globals.css';
+
+.root {
+  display: flex;
+  flex-flow: column;
+}

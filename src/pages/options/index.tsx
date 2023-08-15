@@ -1,15 +1,15 @@
 import { createRoot } from 'react-dom/client';
 
 import { Options } from './Options';
-import './index.css';
+import styles from './index.module.css';
 
 const init = () => {
   const rootContainer = document.querySelector('#__root');
-  if (!rootContainer) {
-    throw new Error('Can not find Options root element');
+  if (rootContainer) {
+    rootContainer.classList.add(styles.root);
+    const root = createRoot(rootContainer);
+    root.render(<Options />);
   }
-  const root = createRoot(rootContainer);
-  root.render(<Options />);
 };
 
 init();

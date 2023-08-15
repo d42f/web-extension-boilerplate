@@ -10,6 +10,7 @@ const outDir = resolve(__dirname, outputFolderName);
 const publicDir = resolve(__dirname, 'public');
 const root = resolve(__dirname, 'src');
 const assetsDir = resolve(root, 'assets');
+const stylesDir = resolve(root, 'styles');
 const componentsDir = resolve(root, 'components');
 const pagesDir = resolve(root, 'pages');
 
@@ -19,6 +20,7 @@ export default defineConfig({
     alias: {
       '@src': root,
       '@assets': assetsDir,
+      '@styles': stylesDir,
       '@components': componentsDir,
       '@pages': pagesDir,
     },

@@ -1,7 +1,7 @@
 import { createRoot } from 'react-dom/client';
 
-import styles from './index.module.css';
 import { Content } from './Content';
+import styles from './index.module.css';
 
 const init = () => {
   const rootContainer = document?.createElement('div');
