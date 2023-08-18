@@ -1,0 +1,38 @@
+$font-family-serif: 'Times New Roman', Times, sans-serif;
+$font-family-sans-serif: Raleway, 'Segoe UI', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+  'Segoe UI Symbol', 'Noto Color Emoji';
+$font-family-mono: 'Segoe UI Mono', 'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Fira Mono', 'Droid Sans Mono',
+  'Courier New', monospace;
+
+$font-size-value-base: 16;
+$font-size-value-sm: calc($font-size-value-base) * 0.75;
+$font-size-value-md: calc($font-size-value-base) * 1;
+$font-size-value-lg: calc($font-size-value-base) * 1.25;
+
+$line-height-value-base: 24;
+$line-height-value-sm: calc($line-height-value-base) * 0.75;
+$line-height-value-md: calc($line-height-value-base) * 1;
+$line-height-value-lg: calc($line-height-value-base) * 1.25;
+
+$font-size-html: calc($font-size-value-base) * 1px;
+$font-size-base: 1rem;
+$font-size-sm: calc($font-size-value-sm / $font-size-value-base * $font-size-base);
+$font-size-md: calc($font-size-value-md / $font-size-value-base * $font-size-base);
+$font-size-lg: calc($font-size-value-lg / $font-size-value-base * $font-size-base);
+
+$font-weight-lighter: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 600;
+
+$line-height-base: calc($line-height-value-base / $font-size-value-base);
+$line-height-sm: calc($line-height-value-sm / $font-size-value-sm);
+$line-height-md: calc($line-height-value-md / $font-size-value-md);
+$line-height-lg: calc($line-height-value-lg / $font-size-value-lg);
+
+$border-radius-base: 0.25rem;
+$border-radius-sm: calc($border-radius-base / 2);
+$border-radius-md: $border-radius-base;
+$border-radius-lg: calc($border-radius-base * 2);
+
+$color-white: #ffffff;
+$color-dark: #212529;

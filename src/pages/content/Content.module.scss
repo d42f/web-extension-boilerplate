@@ -1,0 +1,11 @@
+@import '@styles/variables';
+
+.wrapper {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  row-gap: 1rem;
+  padding: 2rem;
+  pointer-events: none;
+  background-color: $color-white;
+}
