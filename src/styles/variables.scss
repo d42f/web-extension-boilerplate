@@ -1,38 +1,56 @@
+@use 'sass:math';
+
 $font-family-serif: 'Times New Roman', Times, sans-serif;
 $font-family-sans-serif: Raleway, 'Segoe UI', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
   'Segoe UI Symbol', 'Noto Color Emoji';
 $font-family-mono: 'Segoe UI Mono', 'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Fira Mono', 'Droid Sans Mono',
   'Courier New', monospace;
 
-$font-size-value-base: 16;
-$font-size-value-sm: calc($font-size-value-base) * 0.75;
-$font-size-value-md: calc($font-size-value-base) * 1;
-$font-size-value-lg: calc($font-size-value-base) * 1.25;
+$font-size-base-value: 16;
+$font-size-base-value-sm: $font-size-base-value * 0.75;
+$font-size-base-value-md: $font-size-base-value * 1;
+$font-size-base-value-lg: $font-size-base-value * 1.25;
 
-$line-height-value-base: 24;
-$line-height-value-sm: calc($line-height-value-base) * 0.75;
-$line-height-value-md: calc($line-height-value-base) * 1;
-$line-height-value-lg: calc($line-height-value-base) * 1.25;
-
-$font-size-html: calc($font-size-value-base) * 1px;
+$font-size-html: $font-size-base-value * 1px;
 $font-size-base: 1rem;
-$font-size-sm: calc($font-size-value-sm / $font-size-value-base * $font-size-base);
-$font-size-md: calc($font-size-value-md / $font-size-value-base * $font-size-base);
-$font-size-lg: calc($font-size-value-lg / $font-size-value-base * $font-size-base);
+$font-size-sm: math.div($font-size-base-value-sm, $font-size-base-value) * $font-size-base;
+$font-size-md: math.div($font-size-base-value-md, $font-size-base-value) * $font-size-base;
+$font-size-lg: math.div($font-size-base-value-lg, $font-size-base-value) * $font-size-base;
 
 $font-weight-lighter: 300;
 $font-weight-normal: 400;
 $font-weight-bold: 600;
 
-$line-height-base: calc($line-height-value-base / $font-size-value-base);
-$line-height-sm: calc($line-height-value-sm / $font-size-value-sm);
-$line-height-md: calc($line-height-value-md / $font-size-value-md);
-$line-height-lg: calc($line-height-value-lg / $font-size-value-lg);
+$line-height-base-value: 24;
+$line-height-base-value-sm: $line-height-base-value * 0.75;
+$line-height-base-value-md: $line-height-base-value * 1;
+$line-height-base-value-lg: $line-height-base-value * 1.25;
+
+$line-height-base: math.div($line-height-base-value, $font-size-base-value);
+$line-height-sm: math.div($line-height-base-value-sm, $font-size-base-value-sm);
+$line-height-md: math.div($line-height-base-value-md, $font-size-base-value-md);
+$line-height-lg: math.div($line-height-base-value-lg, $font-size-base-value-lg);
 
 $border-radius-base: 0.25rem;
-$border-radius-sm: calc($border-radius-base / 2);
+$border-radius-sm: $border-radius-base * 0.5;
 $border-radius-md: $border-radius-base;
-$border-radius-lg: calc($border-radius-base * 2);
+$border-radius-lg: $border-radius-base * 2;
+
+$primary: #343c46;
+$secondary: #6c757d;
+$blue: #1164ff;
+
+$color-gray-100: #f8fafd;
+$color-gray-200: #e9ecef;
+$color-gray-300: #dee2e6;
+$color-gray-400: #ced4da;
+$color-gray-500: #adb5bd;
+$color-gray-600: #6c757d;
+$color-gray-800: #343a40;
+$color-gray-900: #1e2022;
+$color-gray-700: #050505;
 
 $color-white: #ffffff;
+$color-light: $color-gray-100;
 $color-dark: #212529;
+$color-danger: #dc3545;
