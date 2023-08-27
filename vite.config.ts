@@ -16,6 +16,7 @@ const assetsDir = resolve(root, 'assets');
 const stylesDir = resolve(root, 'styles');
 const componentsDir = resolve(root, 'components');
 const pagesDir = resolve(root, 'pages');
+const storeDir = resolve(root, 'store');
 
 const alias = {
   '@src': root,
@@ -23,6 +24,7 @@ const alias = {
   '@styles': stylesDir,
   '@components': componentsDir,
   '@pages': pagesDir,
+  '@store': storeDir,
 };
 
 const packages = [
